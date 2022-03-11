@@ -1,0 +1,53 @@
+.more-with-us .more-with-us__left {
+  width: 60%;
+}
+
+.more-with-us .more-with-us__left h2 {
+  color: #1f2471;
+}
+
+.more-with-us .more-with-us__right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .more-with-us .more-with-us__left {
+    width: 55%;
+  }
+  .more-with-us .more-with-us__right {
+    right: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .more-with-us .more-with-us__left {
+    width: 60%;
+  }
+  .more-with-us .more-with-us__right {
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .more-with-us .more-with-us__left {
+    width: 100%;
+  }
+  .more-with-us .more-with-us__right {
+    right: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=more_with_us.css.map */

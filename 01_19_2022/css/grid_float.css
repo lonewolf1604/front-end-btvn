@@ -1,0 +1,90 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-full{
+    padding: 0 10px;
+}
+
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.row-small .col{
+    padding: 0 5px;
+}
+
+.row-small{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row-collapse .col{
+    padding: 0;
+}
+
+.row-collapse{
+    margin: 0;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.67%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.67%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.67%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.67%;
+}
+
+.col-12{
+    width: 100%;
+}

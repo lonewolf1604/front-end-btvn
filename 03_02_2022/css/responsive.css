@@ -1,0 +1,25 @@
+/*Resopnsive*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .header__topbar .header__topbar--menu ul {
+    gap: 50px;
+  }
+  .header .header__services .header__services--item {
+    margin-top: 120px;
+    height: 375px;
+    padding: 20px 20px;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .header__topbar .header__topbar--menu ul {
+    gap: 30px;
+    margin-right: 25px;
+  }
+  .header .header__services .header__services--item {
+    margin-top: 120px;
+    height: 375px;
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,291 @@
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: biggest;
+    src: url('../fonts/jaapokki-regular.woff');
+}
+
+@font-face {
+    font-family: jaapokki;
+    src: url('../fonts/jaapokki-regular.woff');
+}
+
+$primary-color: #fff;
+$secondary-color: #4e8ce1;
+
+body{
+    margin-bottom: 500px;
+    background-color: #eefcff;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: no-repeat;
+    overflow: hidden;
+
+    .header__change-page{
+        filter: brightness(0) opacity(0);
+        transition: 0.2s filter ease-in-out;
+    }
+
+    &:hover .header__change-page{
+        filter: brightness(1) opacity(1);
+    }
+
+    p.left, p.right{
+        display: flex;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 350px;
+        background-color: $primary-color;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600;
+        border-radius: 5px;
+        filter: brightness(1) opacity(0.8);
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover{
+            filter: brightness(1) opacity(1);
+        }
+    }
+
+    p.left{
+        content: "\f053";
+        left: 0;        
+        margin-left: 20px;
+    }
+
+    p.right{
+        content: "\f054";
+        right: 0;        
+        margin-right: 20px;
+    }
+
+    //.header topbar
+
+    .header__topbar{
+        padding-top: 20px;
+        .header__topbar--menu, .header__topbar--right{
+            ul{
+                min-height: 70px;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 0.9rem;
+                font-family: roboto;
+                padding-right: 50px;
+                li{
+                    a{
+                        color: $primary-color;
+                    }
+                }
+            }            
+        }
+
+        .header__topbar--menu{
+            ul{
+                gap: 60px;
+            }
+        }
+
+        .header__topbar--right{
+            ul{
+                li{
+                    &:first-child{
+                        a{
+                            position: relative;
+
+                            i, form input{
+                                position: absolute;
+                                width: 35px;
+
+                            }
+
+                            form{
+                                input{
+                                    //display: none;
+                                    top: -19px;
+                                    right: 14px;
+                                    height: 36.5px;
+                                    border: none;
+                                    background-color: transparent;
+                                    color: transparent;
+                                    border-radius: 25px;
+                                    visibility: hidden;
+                                    transition: 0.3s all ease-in-out;
+                                    z-index: 0;
+                                }
+                            }
+
+                            i{
+                                border: 1px solid $primary-color;
+                                border-radius: 50%;
+                                height: 35px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                left: -50px;
+                                top: -18px;
+                                transition: 0.25s all ease-in-out;
+                                z-index: 100;
+                            }
+
+                            &:hover{
+                                i{
+                                    color: #000;
+                                    background-color: $primary-color;
+                                }
+                                form{
+                                    input{
+                                        //display: block;
+                                        visibility: visible;
+                                        width: 250px;
+                                        background-color: $primary-color;
+                                        padding-left: 15px;
+                                        padding-right: 37px;
+                                    }
+                                }
+                            }
+                            
+                            
+                        }
+                    }
+                }
+                gap: 10px;
+            }
+        }
+    }
+
+    //end .header__topbar
+
+    //.header__content
+    .header__content{
+        text-align: center;
+        margin-top: 22vh;
+
+        h2{
+            text-transform: uppercase;
+            color: $primary-color;
+            font-size: 1.57rem;
+            font-family: roboto, sans-serif;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        h2.active-size{
+            font-size: 5.7rem;
+            font-family: biggest, sans-serif;
+            letter-spacing: 0.15rem;
+            margin-bottom: 20px;
+        }
+
+        h2.active-color{
+            color: $secondary-color;
+            letter-spacing: 1.5rem;
+        }
+
+        p{
+            padding: 15px 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-family: roboto, sans-serif;
+            font-size: 1.14rem;
+        }
+
+        p.active-bg-1{
+            background-color: rgba(0, 0, 0, 0.678);
+            color: $primary-color;
+        }
+
+        p.active-bg-2{
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+
+    }
+    //end .header__content
+
+    //.header__services
+    .header__services{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        
+        .header__services--item{
+            background-color: $primary-color;
+            text-align: center;
+            margin-top: 120px;
+            height: 375px;
+            padding: 50px 60px;
+            width: 360px;
+            position: relative;
+            
+            .header__services--content{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 30px 60px;
+                z-index: 100;
+                i, p, h2{   
+                    display: block;
+                }
+                i{
+                    color: $secondary-color;
+                    font-size: 3.57rem;
+                    padding: 30px 0 25px 0;
+                }
+                p{
+                    &:nth-child(2){
+                        color: $secondary-color;
+                        font-size: 0.857rem;
+                        padding-bottom: 10px;
+                        font-family: roboto, sans-serif;
+                        letter-spacing: 5px;
+                    }
+                    &:nth-child(4){
+                        line-height: 30px;
+                        font-family: 'Arimo', sans-serif;
+                        color: #5a5a5a;
+                    }
+                }
+    
+                h2{
+                    padding-bottom: 5px;
+                    font-family: jaapokki, sans-serif;
+                }
+
+            }
+            .services__item--bg{
+                p {
+                    color: #f4f3f3;
+                    font-family: roboto;
+                    font-size: 150px;
+                    font-weight: bold;
+                    height: 150px;
+                    top: 18%;
+                    left: 0;
+                    line-height: 100px;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                }
+                
+            }
+        }
+    }
+
+
+    //end .header__services
+
+}
+
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN 03/01/2022</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <!-- Do e làm siêng xíu nên e cho 2 form vô 1 file luôn -->
+    <div class="container">
+        <!-- Form 1 - Try a free sample -->
+        <div class="homework01">
+            <form action="">
+                <!-- Form head -->
+                <div class="form-head">
+                    <h1>Try a free sample</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut reprehenderit tempora, maiores mollitia, molestiae assumenda possimus eum natus reiciendis sequi iusto beatae aliquam! Doloremque temporibus ipsam numquam velit cum?
+                    </p>
+                </div>
+                <!-- /.Form head -->
+
+                <!-- Form content -->
+                <div class="form-content">
+                    <!-- Form left -->
+                    <div class="form-left">
+                        <div class="form-group">
+                            <label for="firstName"><b>First name</b></label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter first name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><b>Email address</b></label>
+                            <input type="email" name="email" id="email" placeholder="Enter email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><b>City</b></label>
+                            <input type="text" name="city" id="city" placeholder="Enter your city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zipCode"><b>ZIP code</b></label>
+                            <input type="text" name="zipCode" id="zipCode" placeholder="Enter ZIP code" required>
+                        </div>
+                    </div>
+                    <!-- /.Form left -->
+
+                    <!-- Form right -->
+                    <div class="form-right">
+                        <div class="form-group">
+                            <label for="lastName"><b>Last name</b></label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter last name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address"><b>Address</b></label>
+                            <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state"><b>State</b> <span>(optional)</span></label>
+                            <input type="text" name="state" id="state" placeholder="Enter state">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country"><b>Country</b></label>
+                            <select name="country" id="country">
+                                <option value="0">Choose Country</option>
+                                <option value="vn">Vietnam</option>
+                                <option value="jp">Japane</option>
+                                <option value="cn">China</option>
+                                <option value="us">United Stated</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- /.Form right -->
+                </div>
+                <!-- /.Form content -->
+
+                <!-- Form foot -->
+                <div class="form-foot">
+                    <button type="submit" class="btn-primary">SEND ME FREE COFFEE</button>
+                </div>
+                <!-- /.Form foot -->
+            </form>
+        </div>
+        <!-- /.Form 1 - Try a free sample -->
+
+        <!-- Form 2 - Booking Form -->
+        <div class="homework02">
+            <form action="">
+                <!-- Form head -->
+                <div class="form-head">
+                    <h1>Booking Form</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut reprehenderit tempora, maiores mollitia, molestiae assumenda possimus eum natus reiciendis sequi iusto beatae aliquam! Doloremque temporibus ipsam numquam velit cum?
+                    </p>
+                    <hr width="95%" align="center">
+                </div>
+                <!-- /.Form head -->
+
+                <!-- Form content -->
+                <div class="form-content">
+                    <!-- Form content head -->
+                    <div class="form-content-1">
+                        <!-- Form left -->
+                        <div class="form-left">
+                            <div class="form-group">
+                                <label for="firstName"><b>Name<span>*</span></b></label>
+                                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><b>Email<span>*</span></b></label>
+                                <input type="email" name="email" id="email" placeholder="Enter email" required>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <!-- /.Form left -->
+
+                        <!-- Form right -->
+                        <div class="form-right">
+                            <div class="form-group">
+                                <label for="lastName"><br></label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone"><b>Phone<span>*</span></b></label>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <!-- /.Form right -->
+                    </div>
+                    <!-- /.Form content 1 -->
+
+                    <!-- Form content 2 -->
+                    <div class="form-content-2">
+                        <!-- Form left -->
+                        <div class="form-left">              
+                            <div class="form-group">
+                                <label for="departureDate"><b>Departure Date<span>*</span></b></label>
+                                <input type="date" name="departureDate" id="departureDate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="returnDate"><b>Return Date<span>*</span></b></label>
+                                <input type="date" name="returnDate" id="returnDate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="numOfGuestPassenger"><b>Number of guests/passengers<span>*</span></b></label>
+                                <select name="numOfGuestPassenger" id="numOfGuestPassenger">
+                                    <option value="0">*Please Select*</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <!-- /.Form left -->
+
+                        <!-- Form right -->
+                        <div class="form-right">
+                            
+                            <div class="form-group">
+                                <label for="departureTime"><b>Departure Time <span>*</span></b></label>
+                                <input type="time" name="departureTime" id="departureTime" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="returnTime"><b>Return Time<span>*</span></b></label>
+                                <input type="time" name="returnTime" id="returnTime" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="typeOfRoomTicket"><b>Type of room/ticket<span>*</span></b></label>
+                                <div class="item">
+                                    <label for="economy">Economy</label>
+                                        <input type="radio" name="economy" id="economy">
+                                </div>
+                                <div class="item">
+                                    <label for="premium">Premium</label>
+                                        <input type="radio" name="premium" id="premium">
+                                </div>
+                                <div class="item">
+                                    <label for="bussiness">Bussiness</label>
+                                        <input type="radio" name="bussiness" id="bussiness">
+                                </div>
+                                <div class="item">
+                                    <label for="deluxe">Deluxe</label>
+                                    <input type="radio" name="deluxe" id="deluxe">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.Form right -->
+                    </div>
+                    
+                </div>
+                <!-- /.Form content -->
+
+                <!-- Form foot -->
+                <div class="form-foot">
+                    <button type="submit" class="btn-dark">BOOK</button>
+                </div>
+                <!-- /.Form foot -->
+            </form>
+        </div>
+        <!-- /.Form 2 - Booking Form -->
+    </div>
+</body>
+</html>

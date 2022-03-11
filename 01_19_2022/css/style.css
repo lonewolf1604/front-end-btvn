@@ -1,0 +1,479 @@
+/* ******* */
+
+.wrapper{
+    background-color: #f4f2f0;
+}
+
+header{
+    height: 110px;
+    background-color: gray;
+}
+
+footer{
+    height: 200px;
+    background-color: gray;
+}
+/* css head-slug */
+
+.head-slug{
+    height: 35px;
+}
+
+.container{
+    width: 85.53%;
+    margin: 0 auto;
+}
+
+.head-slug ul li{
+    margin-top: -2px;
+}
+
+.head-slug ul li a{
+    color: #cfa267;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.head-slug ul li a:hover{
+    color: #a68252;
+}
+
+.head-slug ul li+li span::after{
+    content: '/';
+    color: #807e7e;
+    padding: 0;
+    margin: 0;
+    margin: 0 10px 0 5px;
+}
+
+/* end css head-slug */
+
+/* css banner */
+.banner{
+    height: 465px;
+    padding-right: 15px;
+}
+
+.banner .container{
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000000;
+}
+
+.banner .container .banner__content{
+    width: 562px;
+    height: 219px;
+    position: absolute;
+    top: 30.11%;
+    left: 14.95%;
+    background-color: #ffffffcc;
+    border-radius: 5px;
+    padding: 25px 35px;
+    z-index: 1;
+}
+
+.banner .container h1, p{
+    padding: 0;
+    margin: 0;
+}
+
+.banner .container .banner__content h1{
+    color: #ef5350;
+}
+
+.banner .container .banner__content h1:hover{
+    color: #bf4240;
+}
+
+.banner .container .banner__content p{
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.banner .container .banner__content p+p{
+    font-size: 1.1429rem;
+}
+
+.banner .container .banner__content p span::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('../icons/locate.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner .container .banner__content h1.banner__content--price{
+    width: auto;
+    padding: 10px 25px;
+    margin-top: 4px;
+    color: #fff;
+    background-color: #ef5350;
+    border-radius: 5px;
+    float: right;
+}
+
+/* end css banner */
+
+/* css search project */
+.search-project{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px #CCC; 
+}
+
+.search-project .search-input{
+    position: relative; 
+    padding-right: 15px;   
+}
+
+.search-project .search-input .search-icon::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-image: url('../icons/search.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    margin-left: 10px;
+}
+
+.search-project .search-input input{
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    margin-top: 11px;
+    border-radius: 5px;
+    border: 1px solid #d8d7d7;
+}
+
+.search-project .dropdown-selection{
+    width: 38%;
+    padding-left: 15px;
+    margin-right: 2%;
+}
+
+
+.search-project .dropdown-selection ul li{
+    border-left: 1px solid #d8d7d7;
+    height: 60px;
+}
+
+.search-project .dropdown-selection ul li+li{
+    border-right: 1px solid #d8d7d7;
+}
+
+.search-project .dropdown-selection ul li .menu__item{
+    margin: 10px 15px;
+} 
+
+.search-project .dropdown-selection ul li .menu__item a,h4{
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.search-project .dropdown-selection ul li h4 a{
+    padding-bottom: 0;
+}
+
+.search-project .dropdown-selection ul li h4{
+    position: relative;
+}
+
+.search-project .dropdown-selection ul li h4 a:focus{
+    color: red;
+}
+
+.search-project .dropdown-selection ul li h4 a span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/down.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+.search-project .dropdown-selection ul li h4 a:active span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/up.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+/* Menu hidden --- Chưa làm đc như trang web */
+
+.search-project .dropdown-selection ul.menu > li{
+    position: relative;
+}
+
+.search-project .dropdown-selection ul.menu > li:hover > .menu__item > ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.search-project .dropdown-selection ul.menu > li > .menu__item > ul{
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.search-project .dropdown-selection ul.menu li .menu__item ul li,
+.search-project .dropdown-selection ul.menu li .menu__item ul li a{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.search-project .dropdown-selection ul.menu li .menu__item ul li{
+    padding-left: 15px;
+    border: none;
+}
+
+.search-project .dropdown-selection ul.menu li .menu__item ul li a{
+    padding-bottom: 15px;
+    font-size: 1.25rem;
+    padding-left: 20px;
+}
+
+.search-project .dropdown-selection ul.menu li .menu__item ul li a:hover{
+    color: #b87926;
+}
+
+.search-project .dropdown-selection ul.menu li .menu__item ul li:nth-child(1) a{
+    padding-top: 15px;
+}
+
+/* ************** */
+
+.search-project .search-project__submit{
+    width: 10%;
+}
+
+.search-project .search-project__submit button{
+    float: right;
+    width: 100%;
+    padding: 10px;
+    margin-top: 11px;
+    border-radius: 5px;
+    border: 1px solid #d8d7d7;
+    color: #fff;
+    background-color: #cfa267;
+    border-color: #cfa267;
+    cursor: pointer;
+}
+
+.search-project .search-project__submit button:hover{
+    background-color: #c38a40;
+}
+
+/* css search project */
+
+/* css content */
+.page-content{
+    width: 85.53%;
+    margin: 0 auto;
+}
+
+.page-content .page-content__top{
+    width: 100%;
+    height: 95px;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.page-content .page-content__top h2{
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.page-content .page-content__main{
+    width: 100%;
+}
+
+.page-content .page-content__main .page-content__main--head{
+    width: 100%;
+}
+
+.page-content .page-content__main .page-content__main--head .item{
+    margin: 0;
+    margin-bottom: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 5px 2px #CCC;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__head p, a, img{
+    padding: 0;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+/* ********** */
+
+.page-content .page-content__main .page-content__main--head .item .item__main{
+    padding: 15px 20px 20px 20px;    
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main h3{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main h3 a{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main h3, p, ul li{
+    padding-top: 13px;
+    color: #000;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li{
+    position: relative;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li span{
+    font-size: 0.7rem;
+    font-weight: 900;
+    position: absolute;
+    top: 5%;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main h3
+,.page-content .page-content__main .page-content__main--head .item .item__main ul li{
+    font-size: 1.1428rem;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li{
+    font-weight: 500;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li:first-child{
+    color: #ef5350;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li:first-child::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/us-dollar-256.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main ul li::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/chart.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main p:nth-child(3)::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/avatar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.page-content .page-content__main .page-content__main--head .item .item__main p:nth-child(4)::before{
+    content: '';
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/locate.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+/* ********** */
+
+.page-content .page-content__main .page-content__main--foot{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.page-content .page-content__main .page-content__main--foot .pagination ul li a{
+    padding: 10px 15px;
+    color: #a68252;
+    background-color: #fff;
+    box-shadow: 0px 11px 8px -10px #CCC;
+    font-size: 1.2857rem;
+    border-radius: 5px;
+}
+
+.page-content .page-content__main .page-content__main--foot .pagination ul li+li a{
+    margin-left: 10px;
+}
+
+.page-content .page-content__main .page-content__main--foot .pagination ul li a:hover,
+.page-content .page-content__main .page-content__main--foot .pagination ul li a.active{
+    color: #fff;
+    background-color: #CFA267;
+}
+
+/* end css content */

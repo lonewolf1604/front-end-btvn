@@ -1,0 +1,196 @@
+$primary-bg-color: #896eff;
+$secondary-bg-color: #fff;
+$primary-color: #fff;
+$heading-color: #1f2471;
+$text-color: #505489;
+$form-color: #888;
+$form-text-color: #53595f;
+$border-color: #9c9c9c9f;
+
+//s
+
+.contact-us{
+
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us__left{
+
+        h2{
+            color: $heading-color;
+            margin-bottom: 40px;
+        }
+        .contact-us__left--box{
+
+            .contact-us__left--form{
+                form{
+                    display: block;
+
+                    .row{
+                        justify-content: space-between;
+                    }
+
+                    .form-item{
+                        flex: 0 0 48%;
+                        max-width: 48%;
+                        border: 1px solid $border-color;
+                        padding: 10px 20px;
+                        margin-bottom: 10px;
+                        border-radius: 25px;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 0 10px 4px #1f42871a;
+                        background-color: $secondary-bg-color;
+                        
+                        @media screen and(max-width: 575px){
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            
+                        }
+
+                        label{
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-right: 5px;
+                            margin-right: 5px;
+                            border-right: 1px solid $heading-color;
+                            width: 20px;
+                            height: 20px;
+                            color: $heading-color;    
+                        }
+
+                        input, select, textarea{
+                            width: calc(100% - 25px);
+                            padding-left: autopx;
+                            margin-left: 25px;
+                            font-size: 1.071rem;
+                            border: none;
+                            color: $form-color;
+
+                            height: 100%;
+                            border: none;
+                            
+                            &:active{
+                                border: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+
+                    .form-item-full{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        
+                        textarea{
+                            width: 90%;
+                        }
+                    }
+
+                    .form-textarea{
+                        height: 100px;
+                        position: relative;
+
+                        label{
+                            position: absolute;
+                            top: 7px;
+                        }
+
+                        textarea{
+                            box-sizing: content-box;
+                        }
+                    }
+
+                    .form-recaptcha{
+                        border: 1px solid;
+                        flex: 0 0 300px;
+                        max-width: 300px;
+                        margin-bottom: 10px;
+                        background-color: $secondary-bg-color;
+                        
+                        input{
+                            display: none;
+                            &:checked{
+                                &~ label{
+                                    &> span{
+                                        &::before{
+                                            transition: .1s all ease-in-out;
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        label{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-left: 8px;
+                            font-size: 13px;
+                            > span{
+                                width: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    content: '\f00c';
+                                    font-family: 'Font Awesome 5 Free';
+                                    font-weight: 900;
+                                    font-size: 0px;
+                                    color: #10A460;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 25px;
+                                    height: 25px;
+                                    border: 2px solid $border-color;
+                                    border-radius: 2px;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            & > div{
+                                width: 40%;
+                                padding: 10px 0;
+                                padding-right: 10px;
+                                span{
+                                    text-align: right;
+                                    display: block;
+                                    color: $form-text-color;
+                                    &:nth-child(2){
+                                        font-size: 11px;
+                                    }
+                                    &:nth-child(3){
+                                        font-size: 9px;
+                                    }
+                                }
+                                p{
+                                    
+                                    img{
+                                        display: block;
+                                        margin-left: 35px;
+                                        padding-left: 15px;
+                                        width: 50%;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-us__right{
+        padding: 0;
+        margin: 0 auto;
+        width: 95%;
+        overflow: hidden;
+    }
+}

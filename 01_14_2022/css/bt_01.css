@@ -1,0 +1,139 @@
+/* ****** */
+@font-face {
+    font-family: Roboto Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto Regular', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.wrapper{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+ul li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 365px;
+}
+
+/* css head-info */
+.wrapper header section{
+    width: 100%;
+    min-height: 315px;
+    background-image: url('../images/background_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F6F6F6;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.wrapper header section .head-info{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    margin-left: 35px;
+    left: 0;
+    bottom: 0;
+}
+
+.wrapper header section .head-info .head-logo{
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.wrapper header section .head-info .head-logo img{
+    max-width: 75%;
+    position: absolute;
+    left: 12%;
+    bottom: 4%;
+}
+
+.wrapper header section .head-info .head-text{
+    padding-left: 40px;
+    text-shadow: 1.5px 1.5px 1.5px #ff0000;
+}
+
+.wrapper header section .head-info .head-text h1{
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.wrapper header section .head-info .head-text p{
+    font-size: 1.2em;
+    display: inline;
+    padding-right: 25px;
+}
+
+.wrapper header section .head-info .head-text span{
+    font-size: 1.7em;
+}
+/* /.css head-info */
+
+/* css menu */
+.wrapper .head-menu{
+    float: right;
+    margin-right: 3vw;
+    height: 48px;
+}
+
+.wrapper ul{
+    height: 100%;
+}
+
+.wrapper ul li{
+    float: left;
+    height: 100%;
+}   
+
+.wrapper ul li a{
+    display: block;
+    font-size: 1.2em;
+    padding: 8px;
+    margin-left: 2px;
+}
+
+.wrapper ul li.active a,
+.wrapper ul li:hover a{
+    border-bottom: 3px solid red;
+    color: red;
+}
+
+
+/* /.css menu*/
+
+.list-example{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

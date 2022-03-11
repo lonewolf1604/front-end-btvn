@@ -1,0 +1,117 @@
+
+
+:root{
+    --column-spacing: 10px;
+}
+
+
+.wrapper{
+    background-color: #fff;
+}
+
+.container{
+    width: 1200px;
+}
+
+/*css header*/
+header {
+    height: 100px;
+    box-shadow: 0px 0px 5px #474747;
+}
+
+header .container .head-menu .head-menu__logo{
+    height: 100px;
+    position: relative;
+}
+
+header .container .head-menu .head-menu__logo img{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+header .container .head-menu .head-menu__content{
+    padding: calc(42px - 0.4px) 0;
+}
+
+header .container .head-menu .head-menu__content .head-menu__content--right .head-menu__donate a{
+    background-color: #f1f1f1;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: .3s all ease-in-out;
+}
+
+header .container .head-menu .head-menu__content .head-menu__content--right .head-menu__donate a:hover{
+    background-color: #d7062c;
+    color: #fff;
+}
+
+header .container .head-menu .head-menu__content .head-menu__content--right .head-menu__search-tool i{
+    font-size: 20px;
+}
+/*end css header*/
+
+
+/*css main*/
+.main .container .main-item{
+    width: calc(100% / 4 - 20px);
+    height: 250px;
+    margin: 25px var(--column-spacing);
+    box-shadow: 0px 0px 15px -8px #474747;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .container .main-item:hover .main-item__content{
+    opacity: 1;
+    transition: .5s all ease-in-out;
+}
+
+.main .container .main-item:hover .main-item__content{
+    opacity: 0;
+}
+
+.main .container .main-item .main-item__hover{
+    background-color: #fff;
+    height: 250px;
+    position: absolute;
+    top: -250px;
+    visibility: hidden;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+}
+
+.main .container .main-item:hover .main-item__hover{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main .container .main-item .main-item__hover h3{
+    padding-top: 50px;
+}
+
+.main .container .main-item .main-item__hover i{
+    color: #d8062c;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.main .container .main-item p img{
+    
+}
+
+.main .container .main-item h3{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.main .container .main-item p{
+    color: #8d8d8d;
+    padding-bottom: 20px;
+}
+
+/*end css main*/

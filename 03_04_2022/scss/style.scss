@@ -1,0 +1,106 @@
+
+$primary-bg-color: #896eff;
+$secondary-bg-color: #fff;
+$primary-color: #fff;
+$heading-color: #1f2471;
+$text-color: #505489;
+$form-color: #888;
+$border-color: #9c9c9c9f;
+
+//
+
+@keyframes subcribe__left {
+    0% {transform: rotate(-5deg);}
+    50% {transform:rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+//
+
+/* .container */ header, section, footer{
+    overflow: hidden;
+}
+
+.container-team{
+    overflow: none;
+}
+
+.heading-active{
+    color: $primary-bg-color;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #896eff1a;
+    margin-bottom: 20px;
+}
+
+.animation-active{
+    animation: subcribe__left 7s;
+    animation-iteration-count: infinite;
+    //padding-right: 5px;
+}
+
+
+.padding-top-active{
+    padding-top: 100px;
+}
+.padding-top-2-active{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.about-us-icons{
+    
+    ul{
+        display: flex;
+        li{
+            display: inline-block;
+            margin: 2px;
+            a{
+
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+                text-align: center;
+                border-radius: 50px;
+                font-size: 14px;
+                transition: all .5s;
+                margin: 2px;
+            }
+        }
+    }
+}
+
+
+
+                    
+.btn{
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    //background-color: red;
+    i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $primary-bg-color;
+        color: $primary-color;
+    }
+    span{
+        font-family: 'Poppins', sans-serif;
+        padding-left: 10px;
+        color: $primary-bg-color;
+        font-size: 1.071rem;
+        font-weight: 500;
+    }
+}

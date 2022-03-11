@@ -1,0 +1,22 @@
+.header{
+    background-color: #896eff;
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 20px 0;
+        .header-logo{
+            width: 20%;
+            //background-color: red;
+        }
+        .header-menu{
+            text-align: right;
+            align-items: center;
+            //background-color: red;
+            width: calc(80%);
+            font-size: 3rem;
+        }
+
+    }
+}

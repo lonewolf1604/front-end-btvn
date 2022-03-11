@@ -1,0 +1,181 @@
+
+$primary-bg-color: #896eff;
+$secondary-bg-color: #fff;
+$primary-color: #fff;
+$heading-color: #1f2471;
+$text-color: #505489;
+$form-color: #888;
+$border-color: #9c9c9c9f;
+
+//
+
+.testmonial{
+    background-color: $primary-bg-color;
+    padding-bottom: 80px;
+    //height: ;
+
+    .container-big{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .testmonial__left{
+       /*  .row-nowrap{
+            flex-wrap: nowrap;
+            overflow: auto;
+        } */
+        
+
+        .testmonial__left--item{
+            width: calc(100% / 3);
+            color: $text-color;
+
+            @media screen and(max-width: 1199px){
+                width: 50%;
+
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+
+            @media screen and(max-width: 575px){
+                width: 100%;
+
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+            &> div{
+                padding: 0 15px;
+            }
+
+            .testmonial-1{
+                background-color: $secondary-bg-color;
+                border-radius: 30px;
+                padding: 30px;
+                box-shadow: 0 0 10px 4px #1f42871a;
+
+                .testmonial__item--content{
+                    border-bottom: 1px solid #e1e1f0;
+                    padding: 0 0 20px;
+                    margin-bottom: 20px;
+                    
+                    position: relative;
+                    font-size: 15px;
+                    font-weight: 400;
+                } //end .testmonial__item--content
+                
+                .testmonial__item--info{
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+
+                    .info-left{
+                        border-radius: 50%;
+                        height: 70px;
+                        width: 70px;
+                        border: 3px solid #896eff;
+                        overflow: hidden;
+                        margin-right: 15px;
+
+                        background: #fff;
+                        position: relative;
+                        display: inline-block;
+
+                        img{
+                            height: 100%;
+                        }
+                    }
+
+                    .info-right{
+                        h3{
+                            font-size: 1.571rem;
+                            font-weight: 700;
+                            color: $heading-color;
+                            line-height: 26px;
+                            margin-bottom: 5px;
+                        }
+
+                        p{
+                            i{
+                                color: #fea500;
+                            }
+                        }
+                    }
+
+                } //end .testmonial__item--info
+            }
+        }
+    }
+
+    .testmonial__right{
+        color: $primary-color;
+        h3{
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #faf8f21a;
+            margin-bottom: 20px;
+
+            margin: 15px 0;
+        }
+
+        h2{
+            margin: 5px 0;
+        }
+
+        p{
+            font-size: 1.071rem;
+            margin: 10px 0;
+        }
+    }
+
+    @media screen and (max-width: 991px){
+        .testmonial__left{
+            order: 2;
+        }
+        
+        .testmonial__right{
+            padding: 15px;
+            order: 1;
+        }
+
+        .slide-change{
+            order: 3;
+        }
+    }
+
+    .slide-change{
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+        p{
+            display: inline-block;
+            margin: 10px;
+            a{
+                color: $primary-bg-color;
+                display: flex;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-bg-color;
+                transition: .5s all ease-in-out;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $primary-bg-color;
+                }
+                i{
+                    font-size: 1.2rem;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.fetures .fetures__right {
+  padding: 0;
+  margin: 0 auto;
+  width: 95%;
+  overflow: hidden;
+}
+
+.fetures .fetures__right p img {
+  width: 100%;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .row .item-icon, .fetures .fetures__left .fetures__left--box .fetures__left--item .row .item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 766px) {
+  .fetures .fetures__left .fetures__left--box .fetures__left--item .row .item-icon {
+    display: block;
+  }
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .row .item-content {
+  margin-left: 15px;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .row .none-padding {
+  margin: 0;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 2;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p.bg-yellow {
+  background-color: #ffa808;
+  -webkit-box-shadow: 0 2px 15px #ffa80880;
+          box-shadow: 0 2px 15px #ffa80880;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p.bg-red {
+  background-color: #ff586e;
+  -webkit-box-shadow: 0 2px 15px #ff586e80;
+          box-shadow: 0 2px 15px #ff586e80;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p.bg-green {
+  background-color: #029e76;
+  -webkit-box-shadow: 0 2px 15px #029e7680;
+          box-shadow: 0 2px 15px #029e7680;
+}
+
+@media screen and (max-width: 1199px) {
+  .fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon {
+    width: 135px;
+    height: 135px;
+  }
+  .fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon::before {
+    width: 135px;
+    height: 135px;
+  }
+  .fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__item--icon p {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item .fetures__left--content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item:nth-child(1) .fetures__item--icon::before {
+  background-image: url("../images/red.3b9b7a110abc0c309202a67ad5c60078.png");
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item:nth-child(2) .fetures__item--icon::before {
+  background-image: url("../images/yellow.8db501e1a5b56d38cbac3a94cc99b0bf.png");
+}
+
+.fetures .fetures__left .fetures__left--box .fetures__left--item:nth-child(3) .fetures__item--icon::before {
+  background-image: url("../images/green.5fa9d0cfb5ff0fed0b8a2789f2b9f938.png");
+}
+/*# sourceMappingURL=fetures.css.map */

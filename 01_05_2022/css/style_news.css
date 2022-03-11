@@ -1,0 +1,90 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+    width: 95%;
+}
+/* css header */
+h1{
+    color: blueviolet;
+}
+/* end css header */
+
+/* css main */
+
+
+/* css item - none pseudo */
+.main-content .item{
+    margin-top: 20px;
+    height: 170px;
+}
+
+.item .item-left{
+    float: left;
+    width: 20%;
+}
+
+.item .item-left img{
+    width: 80%;
+}
+
+.item .item-right{
+    width: 70%; 
+}
+
+.item .item-right h2{
+    margin-bottom: 20px;
+}
+
+.item .item-right a{
+    color: black;
+}
+/* end css item - none pseudo */
+
+/* css item - pseudo */
+.main-content .item:nth-child(2n+2) p{
+    color: blue;
+}
+
+header :hover{
+    color: red;
+}
+ /* 
+main .item a:hover{
+    color: red;
+    font-size: 0.9em;
+}
+ */
+ .main-content .item :hover  p{
+    color: green;
+    font-size: 0.9em;
+}
+/* 
+main .item p:hover{
+    color: green;
+    font-size: 0.9em;
+}
+ */
+ .main-content .item :hover h2 a{
+    color: red;
+    font-size: 0.9em;
+}
+
+.item-left:hover ~ .item-right p{
+    color: green;
+    font-size: 0.9em;
+}
+
+.item-left:hover ~ .item-right h2 a{
+    color: red;
+    font-size: 0.9em;
+}
+
+/* css item - pseudo */

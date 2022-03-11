@@ -1,0 +1,118 @@
+@-webkit-keyframes subcribe__left {
+  0% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+}
+
+@keyframes subcribe__left {
+  0% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+}
+
+.subcribe {
+  background-color: #896eff;
+  padding: 70px 0 40px 0;
+}
+
+.subcribe .subcribe__left p {
+  padding-right: 5px;
+}
+
+.subcribe .subcribe__right {
+  color: #fff;
+  width: 95%;
+}
+
+.subcribe .subcribe__right p:nth-child(1) {
+  font-size: 1.285rem;
+  font-weight: 600;
+  line-height: 1.57rem;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: rgba(250, 248, 242, 0.1);
+  border-radius: 10px;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.subcribe .subcribe__right p:nth-child(3) {
+  font-size: 1.071rem;
+  font-weight: 400;
+  line-height: 1.785rem;
+  padding: 30px 0 40px 0;
+}
+
+.subcribe .subcribe__right h2 {
+  padding-top: 20px;
+}
+
+.subcribe .subcribe__right form .subcribe__right--form {
+  width: 65%;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px 2px #896eff80;
+          box-shadow: 0 0 5px 2px #896eff80;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .subcribe .subcribe__right form .subcribe__right--form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .subcribe .subcribe__right form .subcribe__right--form {
+    width: 100%;
+  }
+}
+
+.subcribe .subcribe__right form .subcribe__right--form input {
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.07rem;
+  font-family: 'Poppins', sans-serif;
+  color: #888;
+}
+
+.subcribe .subcribe__right form .subcribe__right--form button {
+  position: absolute;
+  width: 35%;
+  top: 4px;
+  right: 4px;
+  background-color: #896eff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  padding: 11px 20px;
+  font-size: 1.07rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1199px) {
+  .subcribe .subcribe__right form .subcribe__right--form button {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=subcribe.css.map */

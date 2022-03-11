@@ -1,0 +1,356 @@
+
+/* ********************* */
+:root{
+    --primary-bg-color: #F1F1F1;
+    --secondary-bg-color: #196ceb;
+    --primary-color: #323232;
+    --secondary-color: #555;
+}
+
+/* ********************* */
+
+body{
+    font-family: sans-serif;
+    background-color: var(--primary-bg-color);
+}
+
+header, section{
+    width: 100vw;
+    overflow: hidden;
+}
+
+.head-info{
+    background-color: #C9E8D8;
+    color: var(--secondary-color);
+    font-size: 0.93rem;
+}
+
+.head-info .head-info__left p{
+    text-transform: capitalize;
+    padding: 7.5px 0;
+}
+
+.head-info .head-info__right{
+    float: right;
+}
+
+.head-info .head-info__right ul li{
+}
+
+.head-info .head-info__right ul li a{
+    color: var(--secondary-color);
+    display: block;
+    padding: 7.5px 10px;
+    border-left: 1px solid #5555551e;
+}
+
+.head-info .head-info__right ul li:first-child a{
+    border: none;
+}
+
+/* ********************** */
+.head-2{
+    background-color: #fff;
+}
+
+.head-2 .head-2__logo,
+.head-2 .head-2__search,
+.head-2 .head-2__info, 
+.head-2 .head-2__info ul li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.head-2 .head-2__logo p{
+    width: 80%;
+}
+
+.head-2 .head-2__search form{
+    width: 100%;
+}
+
+.head-2 .head-2__search form input,
+.head-2 .head-2__search form button{
+    border: none;
+}
+
+.head-2 .head-2__search form input{
+    padding: 11px 10px;
+    border: 1px solid #5555556e;
+    width: 75%;
+    font-size: 1rem;
+}
+
+.head-2 .head-2__search form button{
+    background-color: var(--secondary-bg-color);
+    border: none;
+    box-shadow: none;
+    padding: 13.7px 15px;
+    margin-top: 3px;
+    margin-left: -4px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.857rem;
+}
+
+/* ************* */
+
+.head-2 .head-2__info{
+    justify-content: right;
+}
+
+.head-2 .head-2__info ul li{
+    padding: 0 15px;
+    position: relative;
+    margin: 0 5px 0 20px;
+    line-height: 1.35rem;
+}
+
+.head-2 .head-2__info ul li p{
+    color: var(--secondary-color);
+    padding-left: 25px;
+    text-align: center;
+}
+
+.head-2 .head-2__info ul li p.icon{
+    position: absolute;
+    top: 37%;
+    right: 75%;
+    font-size: 1.7rem;
+    color: var(--secondary-bg-color);
+}
+
+.head-2 .head-2__info ul li p.count{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 29%;
+    right: 68%;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 0.74rem;
+    color: #fff;
+}
+
+.head-2 .head-2__info ul li p:first-child{
+    font-weight: 700;
+}
+
+.head-2 .head-2__info ul li:last-child, 
+.head-2 .head-2__info ul li:last-child p{
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-size: 1.07rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+/* css nav */
+.head-menu{
+    background-color: var(--secondary-bg-color);
+    color: #fff;
+}
+
+.head-menu input,label{
+    display: none;
+}
+
+.head-menu ul li+li i{
+    position: absolute;
+    top: 35%;
+    right: 5px;
+    padding-left: 5px;
+}
+
+.head-menu ul.menu > li{
+    position: relative;
+}
+
+.head-menu ul.menu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
+
+.head-menu ul.menu > li:hover > a{
+    background-color: #000;
+}
+
+/* menu cấp 2 */
+
+.head-menu ul.menu li ul li{
+    display: none;
+}
+
+.head-menu ul.menu li:hover > ul li{
+    display: block;
+    width: 100%;
+}
+
+.head-menu ul.menu li ul{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--secondary-bg-color);
+    width: 250px;
+    font-size: 0.93rem;
+}
+
+.head-menu ul.menu li ul li{
+    position: relative;
+}
+
+.head-menu ul.menu li ul li:hover{
+    background-color: #000;
+}
+
+.head-menu ul.menu > li > ul li:hover ul{
+    display: block;
+}
+
+/* menu trên cấp 2 */
+.head-menu ul.menu li ul li ul{
+    display: none;
+    top: 0;
+    left: 100%;
+    width: 100%;
+}
+
+.head-menu ul.menu li:last-child ul li ul,
+.head-menu ul.menu li:last-child ul li ul ul{
+    left: -100%;
+    color: red;
+}
+
+/* end css nav */
+
+/* end css header */
+
+
+/* css banner */
+.banner{
+    margin-top: 5px;
+}
+
+.banner .banner__head .banner__head--left{
+    position: relative;
+}
+
+.banner .banner__head .banner__head--left .slide-change{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    visibility: hidden; 
+    transition: 0.2s all ease-in-out;
+    opacity: 0;
+}
+
+.banner .banner__head .banner__head--left .slide-change i{
+    background-color: var(--secondary-bg-color);
+    color: #fff;
+    padding: 15px 10px;
+    margin: 7px;
+}
+
+.banner .banner__head .banner__head--left:hover .slide-change{
+    visibility: visible;
+    opacity: 1;
+}
+
+.banner .banner__head .banner__head--left .slide-change i:last-child{
+    position: absolute;
+    right: 0;
+}
+
+.banner .banner__head .banner__head--right{
+    padding-left: 5px;
+    position: relative;
+}
+
+.banner .banner__head .banner__head--right .banner__right--head,
+.banner .banner__head .banner__head--right .banner__right--foot{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.banner .banner__head .banner__head--right .banner__right--head .flash,
+.banner .banner__head .banner__head--right .banner__right--foot .flash{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(238, 238, 238, 0.2) 50%, rgba(221, 221, 221, 0.1) 70%, rgba(187, 187, 187, 0.0));
+    width: 200%;
+    height: 100px;
+    position: absolute;
+    top: 0%;
+    right: 45%;
+    transform: rotate(-45deg);
+}
+
+.banner .banner__head .banner__head--right .banner__right--head:hover .flash,
+.banner .banner__head .banner__head--right .banner__right--foot:hover .flash{
+    top:0;
+    right: -200%;
+    transition: 0.7s all ease-in-out;
+}
+
+/* .banner .banner__head .banner__head--right:before:hover{
+    bac
+} */
+
+/* ************** */
+
+.banner .banner__foot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap:  35px;
+    margin-top: 0px;
+    background-color: #fff;
+    height: 100px;
+    margin-top: -1px;
+}
+
+.banner .banner__foot .banner__foot--list{
+    position: relative;
+    padding: 0 15px;
+}
+
+.banner .banner__foot .banner__foot--list p{
+    text-transform: uppercase;
+    padding-left: 55px;
+    color: var(--secondary-color);
+}
+
+.banner .banner__foot .banner__foot--list i{
+    position: absolute;
+    top: -50%;
+    font-size: 2.5rem;
+    color: var(--secondary-bg-color);
+} 
+
+.banner .banner__foot .banner__foot--list:nth-child(2) i{
+    background-color: var(--secondary-bg-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 4px;
+    font-size: 2.3rem;
+}
+
+/* end css banner */

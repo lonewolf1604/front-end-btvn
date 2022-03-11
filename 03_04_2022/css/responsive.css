@@ -1,0 +1,14 @@
+@media screen and (max-width: 1199px){
+    body{
+        width: 100vw;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+
+$primary-bg-color: #896eff;
+$secondary-bg-color: #fff;
+$primary-color: #fff;
+$heading-color: #1f2471;
+$text-color: #505489;
+$form-color: #888;
+$border-color: #9c9c9c9f;
+
+//
+
+.more-with-us{
+    .more-with-us__left{
+        width: 60%;
+
+        h2{
+            color: $heading-color;
+        }
+    }
+    
+    .more-with-us__right{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: right;
+    }
+
+    
+    @media screen and (min-width: 1200px) and (max-width: 1399px){
+        .more-with-us__left{
+            width: 55%;
+        }
+        .more-with-us__right{
+            right: 45%
+        }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .more-with-us__left{
+            width: 60%;
+        }
+        .more-with-us__right{
+            right: 30%
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        .more-with-us__left{
+            width: 100%;
+        }
+        .more-with-us__right{
+            right: 100%;
+            justify-content: start;
+            margin-top: 10px;
+        }
+    }
+}

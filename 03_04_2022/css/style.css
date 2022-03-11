@@ -1,0 +1,131 @@
+@-webkit-keyframes subcribe__left {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes subcribe__left {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+/* .container */
+header, section, footer {
+  overflow: hidden;
+}
+
+.container-team {
+  overflow: none;
+}
+
+.heading-active {
+  color: #896eff;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #896eff1a;
+  margin-bottom: 20px;
+}
+
+.animation-active {
+  -webkit-animation: subcribe__left 7s;
+          animation: subcribe__left 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.padding-top-active {
+  padding-top: 100px;
+}
+
+.padding-top-2-active {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.about-us-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us-icons ul li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.about-us-icons ul li a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 14px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin: 2px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.btn i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #896eff;
+  color: #fff;
+}
+
+.btn span {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+  color: #896eff;
+  font-size: 1.071rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

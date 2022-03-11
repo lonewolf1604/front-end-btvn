@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #f3a712;
+    --bold-color: #2E2751;
+    --primary-color: #212529;
+}
+
+html{
+    font-size: 15px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+ul li{
+    display: flex;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*css intro*/
+
+.intro{
+    text-align: center;
+    width: 47.23%;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+.intro p{
+    margin: 25px 0;
+}
+
+.intro p span{
+    background-color: var(--bg-color);
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.intro p span::before,
+.intro p span::after{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 100%;
+}
+
+.intro p span::before{
+    background-image: linear-gradient(to bottom left, var(--bg-color) 50%, rgba(255, 255, 255, 0) 51%);
+    left: calc(50% - 4px);
+    transform: skew(-45deg);
+}
+
+.intro p span::after{
+    background-image: linear-gradient(to bottom right, var(--bg-color) 50%, rgba(255, 255, 255, 0) 51%);
+    right: calc(50% - 4px);
+    transform: skew(45deg);
+}
+
+.intro h1{
+    color: var(--bold-color);
+}
+
+/*css project*/
+
+.projects{
+
+}
+
+.projects .projects-list{
+    margin: 0 auto;
+    width: 54.8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.projects .projects-list .project-list__tag{
+    margin: 20px 0;
+}
+
+.projects .projects-list .project-list__tag label{
+    /* float: left; */
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    text-transform: capitalize;
+    font-size: 1.06rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.projects .projects-list .project-list__tag:last-child label{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.projects .projects-list .project-list__tag:hover label{
+    color: var(--bg-color);
+}
+
+.projects .projects-list .project-list__tag input{
+    display: none;
+}
+
+.projects .projects-list .project-list__tag input:checked ~ label{
+    color: var(--bg-color);
+}
+
+/* css project-item */
+
+.projects .project-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap:  35px;
+    column-gap: 0px;
+    margin-top: 40px;
+}
+
+.projects .project-item .project-item__content{
+    flex: 0 1 calc(100% / 3 - 15px);
+    position: relative;
+}
+
+.projects .project-item .project-item__content .project-item__content--main{
+    height: 315px;
+    position: relative;
+}
+
+.projects .project-item .project-item__content .project-item__content--main .project-img img{
+    filter: brightness(95%);
+}
+
+.projects .project-item .project-item__content .project-item__content--main .project-info{
+    border-left: 3px solid #108800;
+    width: 80%;
+    position: relative;
+    top: -50px;
+    left: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px 0px #a3a3a39a;
+    z-index: 0;
+}
+
+/* for hover */
+
+.projects .project-item .project-item__content .project-item__content--hover{
+    height: 262px;
+    width: 100%;
+    background-color: #0c0e1d8c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+.projects .project-item .project-item__content:hover .project-item__content--hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects .project-item .project-item__content .project-item__content--hover .project-item__hover--icon{
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 30px);
+}
+
+.projects .project-item .project-item__content .project-item__content--hover .project-item__hover--icon a i{
+    color: #fff;
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 100%;
+    padding: 14px 15px;
+    font-size: 1.25rem;
+    /* font-weight: 100; */
+    transition: .35s all ease-in-out;
+}
+
+.projects .project-item .project-item__content .project-item__content--hover .project-item__hover--icon a i:hover{
+    color: var(--bg-color);
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/* end for hover */

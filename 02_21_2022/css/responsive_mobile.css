@@ -1,0 +1,204 @@
+/*Mobile*/
+@media screen and (max-width: 575px){
+    .container{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .head-info .row,
+    .head-2 .row{
+        flex-direction: column;
+    }
+    
+    .head-info .col-6,
+    .head-2 .col-2, 
+    .head-2 .col-5{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .head-info .head-info__left{
+        text-align: center;
+    }
+    
+    .head-info .head-info__right{
+        overflow: auto;
+        float: none;
+    }
+
+    .head-info .head-info__right ul{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .head-info .head-info__right ul li{
+        flex-shrink: 0;
+    }
+
+    /* .head-info .head-info__right ul li a{
+        padding: 0;
+    } */
+/* 
+    .head-2{
+        padding: 0;
+        margin: 0;
+    } */
+
+    /* .head-2 .head-2__logo, */
+    .head-2 .head-2__search,
+    .head-2 .head-2__info{
+        height: 60px;
+    }
+
+    .head-2 .head-2__logo{
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .head-2 .head-2__logo p{
+        text-align: center;
+    }
+    
+    .head-2 .head-2__search{
+        /* justify-content: center; */
+        flex-wrap: nowrap;
+        padding: 0;
+        text-align: center;
+    }
+
+    .head-2 .head-2__search form input{
+        width: 85%;
+    }
+    
+    .head-2 .head-2__search form button span{
+        display: none;
+    }
+    /******/
+    .head-2 .head-2__info{
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .head-2 .head-2__info ul{
+        justify-content: space-around;
+    }
+
+    .head-2 .head-2__info ul li{
+        padding: 0;
+        margin: 0 auto;
+        margin: 0 9px;
+    }
+
+    .head-2 .head-2__info ul li p{
+        padding: 0 5px;
+        padding-left: 20px;
+        font-size: 0.875rem;
+    }
+
+    .head-2 .head-2__info ul li p.icon{
+        left: -35%;
+    }
+    
+    .head-2 .head-2__info ul li p.count{
+        left: 7%;
+    }
+
+    /* ***** */
+
+    .head-menu{
+        padding: 7px 0 0.1px 0;
+    }
+
+    .head-menu label{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-bottom: 7px;
+        margin-left: calc(100% - 30px);
+    }
+    
+    .head-menu ul.menu{
+        display: none;
+    }
+    
+    .head-menu input:checked ~ ul{
+        display: block;
+    }
+
+    .head-menu ul.menu li a{
+        border: none;
+        border-top: 1px solid #fff;
+    }
+
+    
+    .head-menu ul.menu li ul,
+    .head-menu ul.menu li ul li ul{
+        position: static;
+        padding-left: 15px;
+    }
+
+    .head-menu ul.menu li ul li,
+    .head-menu ul.menu li ul li ul li{
+        margin-left: -15;
+    }
+
+    .head-menu ul.menu li ul li a{
+        background-color: var(--secondary-bg-color);
+
+    }
+    .head-menu ul.menu li ul li a{
+        width: 100vw;
+    }
+
+    /* banner */
+    /* .banner .banner__head{
+        height: auto;
+    } */
+
+    .banner .banner__head .row{
+        flex-direction: column;
+    }
+
+    .banner .banner__head .col-3,
+    .banner .banner__head .col-9{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .banner .banner__head .banner__head--right{
+        display: flex;
+        padding: 0;
+        column-gap: 4px;
+    }
+
+    .banner .banner__head .banner__head--right .banner__right--head .flash,
+    .banner .banner__head .banner__head--right .banner__right--foot .flash{
+        top: -20%;   
+    }
+
+    .banner .banner__foot{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 15px 0;
+        justify-content: center;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+
+    .banner .banner__foot .banner__foot--list{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .banner .banner__foot .banner__foot--list i{
+        top: 0;
+    }
+
+    .banner .banner__foot .banner__foot--list:nth-child(4) i{
+        top: -50%
+    }
+}

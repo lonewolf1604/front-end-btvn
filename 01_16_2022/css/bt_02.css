@@ -1,0 +1,226 @@
+/* ****** */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+ul li{
+    list-style: none;
+}
+
+.btn-warning{ 
+    background-color: #CDA26B;
+    border-color: #CDA26B;
+    color: #ffffff;
+}
+
+.btn-warning:hover{ 
+    color: #ffffff;
+}
+
+.wrapper{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.wrapper .head-page{
+    background: #CBA1B2 url('../images/background_2.jpg') no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+} 
+
+.wrapper .head-page .head-content{
+    margin-top: 33px;
+}
+
+/* css input toggle */
+
+.head-page .head-content input[type="radio"]{
+    display: none;
+}
+
+.head-page .head-content input[type="radio"]:nth-child(1):checked ~ .head-title p:nth-child(1) label{
+    background-color: #0000008e;
+    color: #fff;
+}
+
+.head-page .head-content input[type="radio"]:nth-child(2):checked ~ .head-title p:nth-child(2) label{
+    background-color: #0000008e;
+    color: #fff;
+}
+
+.wrapper .head-page .head-content .head-main-content .head-main-panel{
+    display: none;
+}
+
+.head-page .head-content input[type="radio"]:nth-child(1):checked ~ .head-main-content .head-main-panel:nth-child(1){
+    display: block;
+}
+
+.head-page .head-content input[type="radio"]:nth-child(2):checked ~ .head-main-content .head-main-panel:nth-child(2){
+    display: block;
+}
+
+
+
+/* css input toggle */
+
+/* css head-title */
+
+.wrapper .head-page .head-content .head-title p label{
+    margin-bottom: 0;
+    float: left;
+    padding: 5px 10px;
+    background-color: #ffffffaf;
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper .head-page .head-content .head-title p+p label{
+    margin-left: 10px;
+}
+/* 
+.wrapper .head-page .head-content .head-title .active{
+    background-color: #0000008e;
+    color: white;
+    padding: 5px 10px;
+} */
+
+.head-title .active a{
+    color: #ffffffef;
+}
+
+.head-title .active a:hover{
+    color: yellow;
+}
+
+.wrapper .head-page .head-content .head-title::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* end css head-title */
+
+/* css head-main-content */
+.head-page .head-main-content{
+    background-color: #0000008e;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0 5px 5px 5px;
+    height: 100px;
+}
+
+.head-page .head-main-content select{
+    height: 30px;
+    border: 1px solid #0000004d;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+}
+
+.head-page .head-main-content .icon{
+    position: absolute;
+    top: 0;
+}
+
+.head-page .head-main-content .form-search{
+    margin-bottom: 20px;
+}
+
+.head-page .head-main-content .form-search .form-group{
+    display: inline;
+    position: relative;
+}
+
+.head-page .head-main-content .form-search .form-group img{
+    position: absolute;
+    top: 2%;
+    margin-left: -95%;
+}
+
+.head-page .head-main-content .form-search .form-group select{
+    height: 30px;
+    border: 1px solid #0000004d;
+    border-radius: 5px 0 0 5px;
+    width: 18%;
+}
+
+.head-page .head-main-content .form-search input{
+    height: 30px;
+    margin: 0 5px 0 -5px;
+    border: 1px solid #0000004d;
+    padding-left: 12px;
+    border-radius: 0 5px 5px 0;
+    width: 70%;
+}
+
+.head-page .head-main-content .form-search button{
+    height: 30px;
+    width: 11%;
+}
+/* end css head-main-content */
+
+/* css list item */
+.head-page .head-main-content .list-item .form-group{
+    display: inline;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.head-page .head-main-content .list-item .form-group select{
+    background-color: #ffffff00;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.head-page .head-main-content .list-item .form-group img{
+    position: absolute;
+    top: 19%;
+    left: 22px;
+}
+
+
+/* end css list item */
+
+.none-button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+}
+
+.list-example{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

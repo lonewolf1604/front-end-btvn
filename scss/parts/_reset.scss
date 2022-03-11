@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    //font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2{
+    font-size: 2.714rem;
+    font-weight: 700;
+    line-height: 3.285rem;
+    
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
